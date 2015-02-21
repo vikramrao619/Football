@@ -1,0 +1,21 @@
+
+	Augmented Dickey-Fuller Test
+
+data:  normed_winpct_parity
+Dickey-Fuller = -4.5078, Lag order = 3, p-value = 0.01
+alternative hypothesis: stationary
+
+
+	Augmented Dickey-Fuller Test
+
+data:  normed_pr_parity
+Dickey-Fuller = -3.8294, Lag order = 3, p-value = 0.02452
+alternative hypothesis: stationary
+
+
+	Augmented Dickey-Fuller Test
+
+data:  adapted_gini_coefficient
+Dickey-Fuller = -2.7173, Lag order = 3, p-value = 0.2877
+alternative hypothesis: stationary
+

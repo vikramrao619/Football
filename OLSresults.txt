@@ -1,0 +1,257 @@
+[1] "Win Percentage Parity: Model 1"
+
+Call:
+lm(formula = normed_winpct_parity ~ year, data = paritydata)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.056023 -0.020658  0.002844  0.019243  0.061151 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)   
+(Intercept) -1.7531064  0.5938631  -2.952  0.00496 **
+year         0.0009836  0.0002983   3.297  0.00189 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02863 on 46 degrees of freedom
+Multiple R-squared:  0.1911,	Adjusted R-squared:  0.1736 
+F-statistic: 10.87 on 1 and 46 DF,  p-value: 0.001889
+
+[1] "Win Percentage Parity: Model 2"
+
+Call:
+lm(formula = normed_winpct_parity ~ year + salary_cap_era, data = paritydata)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.055613 -0.018776  0.001734  0.019235  0.059675 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)
+(Intercept)    -1.4547423  1.1670163  -1.247    0.219
+year            0.0008327  0.0005894   1.413    0.165
+salary_cap_era  0.0049057  0.0164594   0.298    0.767
+
+Residual standard error: 0.02892 on 45 degrees of freedom
+Multiple R-squared:  0.1927,	Adjusted R-squared:  0.1569 
+F-statistic: 5.372 on 2 and 45 DF,  p-value: 0.008088
+
+[1] "Win Percentage Parity: Model 3"
+
+Call:
+lm(formula = normed_winpct_parity ~ year + post_cap_trend_diff, 
+    data = paritydata)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.055607 -0.018739  0.001714  0.019231  0.059660 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)
+(Intercept)         -1.448e+00  1.171e+00  -1.236    0.223
+year                 8.295e-04  5.916e-04   1.402    0.168
+post_cap_trend_diff  2.497e-06  8.244e-06   0.303    0.763
+
+Residual standard error: 0.02892 on 45 degrees of freedom
+Multiple R-squared:  0.1928,	Adjusted R-squared:  0.1569 
+F-statistic: 5.374 on 2 and 45 DF,  p-value: 0.008077
+
+[1] "Win Percentage Parity: Model 4"
+
+Call:
+lm(formula = normed_winpct_parity ~ year + salary_cap_era + post_cap_trend_diff, 
+    data = paritydata)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.059092 -0.017294  0.003021  0.017075  0.062817 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)
+(Intercept)         -0.8698454  1.4224354  -0.612    0.544
+year                 0.0005373  0.0007184   0.748    0.459
+salary_cap_era      -1.8393082  2.5362233  -0.725    0.472
+post_cap_trend_diff  0.0009238  0.0012704   0.727    0.471
+
+Residual standard error: 0.02908 on 44 degrees of freedom
+Multiple R-squared:  0.2023,	Adjusted R-squared:  0.1479 
+F-statistic:  3.72 on 3 and 44 DF,  p-value: 0.0181
+
+[1] "Playoff Rating Parity: Model 1"
+
+Call:
+lm(formula = normed_pr_parity ~ year, data = paritydata)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.240683 -0.091738  0.007963  0.080859  0.219426 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)   
+(Intercept) -5.847812   2.320518  -2.520  0.01527 * 
+year         0.003210   0.001166   2.754  0.00841 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1119 on 46 degrees of freedom
+Multiple R-squared:  0.1415,	Adjusted R-squared:  0.1229 
+F-statistic: 7.583 on 1 and 46 DF,  p-value: 0.00841
+
+[1] "Playoff Rating Parity: Model 2"
+
+Call:
+lm(formula = normed_pr_parity ~ year + salary_cap_era, data = paritydata)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.23819 -0.09228  0.00391  0.07760  0.21457 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)
+(Intercept)    -4.320290   4.556885  -0.948    0.348
+year            0.002437   0.002301   1.059    0.295
+salary_cap_era  0.025115   0.064269   0.391    0.698
+
+Residual standard error: 0.1129 on 45 degrees of freedom
+Multiple R-squared:  0.1444,	Adjusted R-squared:  0.1064 
+F-statistic: 3.798 on 2 and 45 DF,  p-value: 0.02991
+
+[1] "Playoff Rating Parity: Model 3"
+
+Call:
+lm(formula = normed_pr_parity ~ year + post_cap_trend_diff, data = paritydata)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.238296 -0.092296  0.003943  0.077654  0.214598 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)
+(Intercept)         -4.334e+00  4.575e+00  -0.947    0.348
+year                 2.444e-03  2.310e-03   1.058    0.296
+post_cap_trend_diff  1.240e-05  3.219e-05   0.385    0.702
+
+Residual standard error: 0.1129 on 45 degrees of freedom
+Multiple R-squared:  0.1443,	Adjusted R-squared:  0.1063 
+F-statistic: 3.795 on 2 and 45 DF,  p-value: 0.02998
+
+[1] "Playoff Rating Parity: Model 4"
+
+Call:
+lm(formula = normed_pr_parity ~ year + salary_cap_era + post_cap_trend_diff, 
+    data = paritydata)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.215232 -0.094013  0.003744  0.078792  0.228061 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)
+(Intercept)         -6.991734   5.541926  -1.262    0.214
+year                 0.003786   0.002799   1.353    0.183
+salary_cap_era       8.448332   9.881336   0.855    0.397
+post_cap_trend_diff -0.004219   0.004950  -0.852    0.399
+
+Residual standard error: 0.1133 on 44 degrees of freedom
+Multiple R-squared:  0.1583,	Adjusted R-squared:  0.1009 
+F-statistic: 2.759 on 3 and 44 DF,  p-value: 0.0534
+
+[1] "Adapted Gini Coefficient: Model 1"
+
+Call:
+lm(formula = adapted_gini_coefficient ~ year, data = paritydata)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.045798 -0.019964  0.004545  0.016270  0.050318 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  1.3661834  0.5013300   2.725  0.00906 **
+year        -0.0005794  0.0002519  -2.300  0.02601 * 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02417 on 46 degrees of freedom
+Multiple R-squared:  0.1032,	Adjusted R-squared:  0.08368 
+F-statistic: 5.292 on 1 and 46 DF,  p-value: 0.02601
+
+[1] "Adapted Gini Coefficient: Model 2"
+
+Call:
+lm(formula = adapted_gini_coefficient ~ year + salary_cap_era, 
+    data = paritydata)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.049897 -0.018189  0.002983  0.017253  0.050233 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)  
+(Intercept)     1.9542062  0.9808400   1.992   0.0524 .
+year           -0.0008769  0.0004954  -1.770   0.0835 .
+salary_cap_era  0.0096682  0.0138336   0.699   0.4882  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02431 on 45 degrees of freedom
+Multiple R-squared:  0.1128,	Adjusted R-squared:  0.07338 
+F-statistic: 2.861 on 2 and 45 DF,  p-value: 0.06767
+
+[1] "Adapted Gini Coefficient: Model 3"
+
+Call:
+lm(formula = adapted_gini_coefficient ~ year + post_cap_trend_diff, 
+    data = paritydata)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.049980 -0.018178  0.002905  0.017236  0.050224 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)  
+(Intercept)          1.974e+00  9.843e-01   2.005   0.0510 .
+year                -8.868e-04  4.971e-04  -1.784   0.0812 .
+post_cap_trend_diff  4.977e-06  6.927e-06   0.719   0.4761  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.0243 on 45 degrees of freedom
+Multiple R-squared:  0.1133,	Adjusted R-squared:  0.07394 
+F-statistic: 2.876 on 2 and 45 DF,  p-value: 0.06675
+
+[1] "Adapted Gini Coefficient: Model 4"
+
+Call:
+lm(formula = adapted_gini_coefficient ~ year + salary_cap_era + 
+    post_cap_trend_diff, data = paritydata)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.038025 -0.016616 -0.000165  0.015490  0.046186 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          3.9575028  1.0775825   3.673 0.000647 ***
+year                -0.0018887  0.0005442  -3.470 0.001176 ** 
+salary_cap_era      -6.3068420  1.9213456  -3.283 0.002020 ** 
+post_cap_trend_diff  0.0031641  0.0009624   3.288 0.001991 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02203 on 44 degrees of freedom
+Multiple R-squared:  0.2878,	Adjusted R-squared:  0.2392 
+F-statistic: 5.926 on 3 and 44 DF,  p-value: 0.001738
+
+
+t test of coefficients:
+
+                       Estimate  Std. Error t value  Pr(>|t|)    
+(Intercept)          3.95750281  1.26369802  3.1317 0.0030868 ** 
+year                -0.00188869  0.00063814 -2.9597 0.0049444 ** 
+salary_cap_era      -6.30684201  1.70807243 -3.6924 0.0006100 ***
+post_cap_trend_diff  0.00316407  0.00085724  3.6910 0.0006125 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+

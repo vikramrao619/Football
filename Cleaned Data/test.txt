@@ -1,0 +1,46 @@
+[1] "hello world"
+
+t test of coefficients:
+
+                       Estimate  Std. Error t value  Pr(>|t|)    
+(Intercept)          3.57267972  1.19235506  2.9963 0.0044338 ** 
+year                -0.00169476  0.00060222 -2.8142 0.0072280 ** 
+salary_cap_era      -5.92201892  1.65598591 -3.5761 0.0008475 ***
+post_cap_trend_diff  0.00297014  0.00083085  3.5748 0.0008509 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+
+Call:
+lm(formula = adapted_gini_coefficient ~ year + salary_cap_era + 
+    post_cap_trend_diff, data = paritydata)
+
+Coefficients:
+        (Intercept)                 year       salary_cap_era  
+           3.572680            -0.001695            -5.922019  
+post_cap_trend_diff  
+           0.002970  
+
+
+Call:
+lm(formula = adapted_gini_coefficient ~ year + salary_cap_era + 
+    post_cap_trend_diff, data = paritydata)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.036797 -0.016600 -0.000318  0.015552  0.047802 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)   
+(Intercept)          3.5726797  1.0226420   3.494  0.00108 **
+year                -0.0016948  0.0005166  -3.281  0.00201 **
+salary_cap_era      -5.9220189  1.8944581  -3.126  0.00310 **
+post_cap_trend_diff  0.0029701  0.0009488   3.131  0.00306 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Residual standard error: 0.02208 on 45 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared: 0.2685,	Adjusted R-squared: 0.2198 
+F-statistic: 5.507 on 3 and 45 DF,  p-value: 0.002617 
+
