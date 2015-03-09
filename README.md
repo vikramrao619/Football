@@ -1,2 +1,2 @@
 # Football
-Herein lie a few IPython notebooks that deal with season-level NFL data.
+This project contains a few IPython notebooks that analyze season-level NFL data as well as some regressions done in R.
